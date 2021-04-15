@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>church</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .banner-area {
+        width: 100%;
+        height: 400px;
+        position: absolute;
+        top: 1px;
+        background-image: url(church8.jpg);
+        background-position: center center;
+        background-size: cover;
+    }
+    
+    .background h2 {
+        padding-top: 3%;
+        font-size: 40px;
+        font-weight: 6px;
+        font-family: arial;
+        color: white;
+        text-align: center;
+    }
+    
+    .background p {
+        font-size: 20px;
+        font-style: bold;
+        font-family: arial;
+        color: white;
+        text-align: center;
+        font-style: italic;
+    }
+    
+    .background input {
+        color: white;
+        padding: 8px;
+        font-family: 'Courier New', Courier, monospace;
+        background-color: rgb(243, 84, 11);
+        align-self: center center;
+        border-radius: 10px;
+        font-size: 15px;
+        display: block;
+        margin: auto;
+    }
+    
+    .background {
+        position: relative;
+        padding: 50px;
+        background: rgba(0, 0, 0, .70);
+        height: 400px;
+    }
+    
+    .background1 {
+        background-color: white;
+        width: 100%;
+        height: fit-content;
+    }
+    
+    .background1 h3 {
+        text-align: center;
+        font-family: arial;
+    }
+    
+    .background1 h4 {
+        text-align: center;
+        font-family: arial;
+    }
+    
+    .background1 p {
+        text-align: center;
+        font-family: arial;
+        padding-top: 0px;
+        padding-left: 10px;
+        padding-right: 20px;
+        border: 0px;
+        font-family: arial;
+    }
+    
+    .image {
+        width: 65px;
+        height: 25px;
+        margin-left: 210px;
+    }
+    
+    * {
+        box-sizing: border-box;
+    }
+    
+    .column {
+        float: left;
+        width: 33.33%;
+    }
+    
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    
+    .welcome {
+        background-color: tomato;
+        width: 100%;
+        height: 100px;
+        color: white;
+        float: left;
+        padding-left: 200px;
+        padding-top: 20px;
+    }
+    
+    .welcome img {
+        height: 18px;
+        padding-right: 0px;
+        margin-right: 0px;
+    }
+    
+    .welcome p {
+        margin-bottom: 0px
+    }
+    
+    .welcome h4 {
+        margin-top: 0px;
+        padding-left: 50px;
+    }
+    
+    .read {
+        background-color: tomato;
+        border-radius: 5px;
+        font-family: arial;
+        border-color: white;
+        box-shadow: 5px;
+        padding: 5px;
+    }
+    
+    .welcome1 h3 {
+        border: 0px;
+        margin-bottom: 0px;
+        padding-left: 60px;
+        font-family: arial;
+    }
+    
+    .img {
+        width: 100%;
+        height: 24px;
+        padding-bottom: 24px;
+        background-color: white;
+        font-family: arial;
+    }
+    
+    .img img {
+        width: 70;
+        height: 20px;
+        padding-top: 5px;
+    }
+    
+    .welcome1 {
+        padding-left: 300px;
+        background-color: antiquewhite;
+    }
+    
+    .image1 p {
+        font-size: 30px;
+        margin-bottom: 0px;
+        font-family: arial;
+    }
+    
+    .image2 p {
+        font-size: 10px;
+        margin-top: 0px;
+        word-spacing: 25px;
+        padding-left: 10px;
+        font-family: arial;
+    }
+    
+    .clock {
+        background-color: tomato;
+        width: 70%;
+        height: 100px;
+        margin: 15px;
+        padding: 5px;
+        padding-left: 20px
+    }
+    
+    .images2 img {
+        height: 250px;
+        width: 425px;
+    }
+    
+    .images2 h3 {
+        text-align: center;
+        margin: 0px;
+        padding: 25px;
+        font-family: arial;
+    }
+    
+    .images2 h4 {
+        text-align: left;
+        font-family: arial;
+        padding-left: 0px;
+    }
+    
+    .images2 {
+        background-color: rgb(245, 241, 241);
+        padding-left: 70px;
+        padding-right: 50px;
+    }
+    
+    .image3 {
+        width: 100%;
+        height: 24px;
+        padding-bottom: 14px;
+        font-family: arial;
+        float: left;
+    }
+    
+    .image3 img {
+        width: 70px;
+        height: 20px;
+        padding-top: 3px;
+        float: left;
+    }
+    
+    .foot p {
+        text-align: left;
+        margin-right: 50px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="banner-area">
+            <div class="background">
+                <h2>SIMPLE CSS TEMPLATE</h2>
+                <p>WELCOME TO OUR CHURCH</p>
+                <input type="submit" value="JOIN WITH US">
+            </div>
+            <div class="background1">
+                <h3>STATEMENT OF FAITH</h3>
+                <div class="row">
+                    <div class="column">
+                        <img src="leaf.png" class='image'>
+                    </div>
+                    <div class="column ">
+                        <img src="people.png" class='image'>
+                    </div>
+                    <div class="column ">
+                        <img src="heart.png " class='image'>
+                    </div>
+
+                </div>
+                <div class=" row ">
+                    <div class="column ">
+                        <h4>What We Believe </h4>
+                        <p>Our company believe in one timeless effort with God who is the designer of all things.He exists in three persons:God the Papa, God the son, God the Holy Spirit.HE is entirely caring and totally divine.Simple CSS Template is the
+                            Moonrises best templates. </p>
+                    </div>
+                    <div class="column ">
+                        <h4>Who We Are</h4>
+                        <p>Regional churches usually relate with, Affiliate with, or consider them selves to be integral parts of denominations, which are also called churches in several traditions.Don' t hesitate to use simple template</p>
+                    </div>
+                    <div class="column ">
+                        <h4>How We Live</h4>
+                        <p>We are passionate about offering the world wide neighborhood as demonstrating God's love to others,Weather personally or online,People are in our Church and all over the world.simple CSS templates would suit you perfectly
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="welcome">
+                <div class="column">
+                    <p><img src="date.png">Monday,10:00 Am-Friday,10:00 Am</p>
+                    <h4>Welcome to our Church</h4>
+                </div>
+                <div class="column">
+                    <p>St.Paul Church</p>
+                    <P>510 102th Ave,NE,Bellevue,WA 68005</P>
+                </div>
+                <div CLASS='column'>
+                    <input type="submit" value="READ MORE " class="read">
+                </div>
+            </div>
+
+            <div class="welcome1">
+                <div class='row'>
+
+                    <div class="column">
+                        <h3 class="img">Welcome to our Church</h3>
+                        <div class='img'><img src="date.png" <p>Monday,10:00 Am-Friday,10:00 Am</p>
+                        </div>
+                        <div class='img'> <img src="arrow.png" <p>St.Paul Church</p>
+                        </div>
+                        <div class='img'><img src="location.png" <p>510 102th Ave,NE,Bellevue,WA 68005</p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class='clock'>
+                            <div class="image1">
+                                <p>200 | 16 | 42 | 40</p>
+                            </div>
+                            <div class='image2'>
+                                <p>Days Hours Minutes Seconds</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class='images2'>
+                <h3>OUR EVENTS</h3>
+                <div class='row '>
+                    <div class="column">
+                        <img src="candle.jpg">
+                    </div>
+                    <div class="column">
+                        <img src="cross.jpg"></div>
+                    <div class="column">
+                        <img src="candle1.jpg">
+                    </div>
+                </div>
+                <div class='row '>
+                    <div class="column">
+                        <h4>Morning Gathering</h4>
+                    </div>
+                    <div class="column">
+                        <h4>Spirit And Truth</h4>
+                    </div>
+                    <div class="column">
+                        <h4>Sunday School</h4>
+                    </div>
+
+                </div>
+                <div class='row'>
+                    <div class='img3'>
+                        <div class="column">
+                            <div class='image3'><img src="date.png" <p>Monday,10:00 Am-Friday,10:00 Am</p>
+                            </div>
+                            <div class='image3'> <img src="arrow.png" <p>St.Paul Church</p>
+                            </div>
+                            <div class='image3'><img src="location.png" <p>510 102th Ave,NE,Bellevue,WA 68005</p>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class='image3'><img src="date.png" <p>Monday,10:00 Am-Friday,10:00 Am</p>
+                            </div>
+                            <div class='image3'> <img src="arrow.png" <p>St.Paul Church</p>
+                            </div>
+                            <div class='image3'><img src="location.png" <p>510 102th Ave,NE,Bellevue,WA 68005</p>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class='image3'><img src="date.png" <p>Monday,10:00 Am-Friday,10:00 Am</p>
+                            </div>
+                            <div class='image3'> <img src="arrow.png" <p>St.Paul Church</p>
+                            </div>
+                            <div class='image3'><img src="location.png" <p>510 102th Ave,NE,Bellevue,WA 68005</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" row ">
+                        <div class='foot'>
+                            <div class="column ">
+
+                                <p>Our company believe in one timeless effort with God who is the designer of all things.He exists in three persons:God the Papa, God the son, God the Holy Spirit.HE is entirely caring and totally divine.Simple CSS Template
+                                    is the Moonrises best templates. </p>
+                            </div>
+                            <div class="column ">
+
+                                <p>Regional churches usually relate with, Affiliate with, or consider them selves to be integral parts of denominations, which are also called churches in several traditions.Don' t hesitate to use simple template</p>
+                            </div>
+                            <div class="column ">
+
+                                <p>We are passionate about offering the world wide neighborhood as demonstrating God's love to others,Weather personally or online,People are in our Church and all over the world.simple CSS templates would suit you perfectly
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
